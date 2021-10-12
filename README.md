@@ -64,6 +64,7 @@ cd oneStepNorm
 Modify the configuration:
 
 <p> The data are from public ADNI dataset, you can download it online </p>
+
 ```bash
 cd configs
 vim configs.py
