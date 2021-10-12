@@ -1,5 +1,6 @@
 # Project 2: One step image registration for Positron Emission Tomography (PET) image using GAN
 
+## Summary
 In this project, I used general advasarial network (GAN) to simplify the PET and MRI image coregistration
 </br>
 All the image data used in this project are from [ADNI dataset](http://adni.loni.usc.edu), in this study I used 100 Raw PET 3D Neuro Dynamic images and their coresponding Co-Registered Processed PET images.
@@ -48,5 +49,14 @@ Fig 5. The learning curve of pix2pix model </br>
 ### Phase 4: Evaluate the model
 Finally, here's the comparison between the predicted image and the target normalised image
 
-Fig. Results </br>
+Fig 6. Results </br>
 <img src="./evaluation/test_result.gif" width="600"/>
+
+## Usage
+
+Clone the repository:
+> git clone https://github.com/Kaiyilin/oneStepNorm
+> cd oneStepNorm
+
+Install the dependencies:
+
