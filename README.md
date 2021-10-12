@@ -49,4 +49,4 @@ Fig 5. The learning curve of pix2pix model </br>
 Finally, here's the comparison between the predicted image and the target normalised image
 
 Fig. Results </br>
-<img src="./evaluation/test_result1.gif" width="600"/>
+<img src="./evaluation/test_result.gif" width="600"/>
