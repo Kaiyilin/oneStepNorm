@@ -55,8 +55,42 @@ Fig 6. Results </br>
 ## Usage
 
 Clone the repository:
-> git clone https://github.com/Kaiyilin/oneStepNorm
-> cd oneStepNorm
 
-Install the dependencies:
+```bash
+git clone https://github.com/Kaiyilin/oneStepNorm
+cd oneStepNorm
+```
 
+Modify the configuration:
+
+<p> The data are from public ADNI dataset, you can download it online </p>
+```bash
+cd configs
+vim configs.py
+```
+<p> Remember to modify the data path </p>
+
+Training the network:
+
+<p> You can use pre-define value </p>
+
+```bash
+python main.py
+```
+
+<p> Or </p>
+
+<p> You can use your own combinations like</p>
+
+```bash
+python main.py --log_path ./logs \
+               --ckpt_path ./ckpt_path \
+               --gen_filter_nums 10 \
+               --disc_filter_nums 10 \
+               --kernel_size 4 \
+               --g_lr 1e-5 \
+               --d_lr 1e-6 \
+               --lambda 150 \
+               --batchsize 2 \
+               --epochs 150 \
+```
