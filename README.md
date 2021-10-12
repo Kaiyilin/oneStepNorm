@@ -42,7 +42,7 @@ Fig 4. The architecture of discriminator <br>
 
 Fig 5. The learning curve of pix2pix model </br>
 
-<img src="../images/training/lr_curve.png" alt="./Data_distribution/itpjt/Figure_1.png" width="600"/>
+<img src="./images/training/lr_curve.png" alt="./Data_distribution/itpjt/Figure_1.png" width="600"/>
 
 
 ### Phase 4: Evaluate the model
