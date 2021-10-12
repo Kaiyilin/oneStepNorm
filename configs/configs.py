@@ -1,9 +1,14 @@
 import tensorflow as tf
 
 prjt_configs = {
+    "records" : {
+        "log_path" : "./logs/",
+        "ckpt_path" : "./ckpt_path/"
+    },
+
     "data": {    
-        "normalised": "./norm",
-        "raw": "./raw"
+        "raw" : "./raw", 
+        "normalised" : "./normalized"
         },
 
     "train": {
@@ -22,5 +27,4 @@ prjt_configs = {
         "gen_input_shape" : (128, 128, 128, 1),
         "disc_input_shape" : (128, 128, 128, 2)
     }
-
 }
