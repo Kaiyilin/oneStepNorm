@@ -54,24 +54,24 @@ Fig 6. Results </br>
 
 ## Usage
 
-Clone the repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/Kaiyilin/oneStepNorm
 cd oneStepNorm
 ```
 
-Modify the configuration:
+### Modify the configuration:
 
 <p> The data are from public ADNI dataset, you can download it online </p>
+<p> Remember to modify the data path </p>
 
 ```bash
 cd configs
 vim configs.py
 ```
-<p> Remember to modify the data path </p>
 
-Training the network:
+### Training the network:
 
 <p> You can use pre-define value </p>
 
