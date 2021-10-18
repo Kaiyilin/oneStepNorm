@@ -95,3 +95,9 @@ python main.py --log_path ./logs \
                --batchsize 2 \
                --epochs 150 \
 ```
+
+### Test:
+
+```bash
+python evaluation/evaluate.py
+```

@@ -99,6 +99,10 @@ def main():
     hist_df = pd.DataFrame(hist.history)
     hist_df.to_csv(os.path.join(args["log_path"], "historty.csv"))
 
+    # save model
+    pix2pix.save_all(save_path=args['ckpt_path'], gen_name="generator", disc_name="discriminator")
+    
+    # log records
     duration = (time.time() - start_time) /60
     logging.warning(f"""Log Path: {args["log_path"]}, Ckpt Path: {args["ckpt_path"]}, 
                     Training_Duration: {duration:.2f} mins, l1_LossLambda: {args["lambda"]}, 
