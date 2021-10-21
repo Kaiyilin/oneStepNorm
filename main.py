@@ -39,7 +39,13 @@ def main():
         print(e)
 
     start_time = time.time()
-    logging.basicConfig(filename = './execution_record.log', level = logging.WARNING, format = '%(filename)s %(message)s')
+
+    # Set a logger for info
+    logging.basicConfig(
+        filename = './execution_record.log', 
+        level = logging.WARNING, 
+        format = '%(filename)s %(message)s'
+        )
 
 
     # Self-defined loss function for GAN
@@ -96,6 +102,7 @@ def main():
         callbacks=None,
         verbose=1
         )
+    
     hist_df = pd.DataFrame(hist.history)
     hist_df.to_csv(os.path.join(args["log_path"], "historty.csv"))
 
@@ -103,7 +110,8 @@ def main():
     pix2pix.save_all(save_path=args['ckpt_path'], gen_name="generator", disc_name="discriminator")
     
     # log records
-    duration = (time.time() - start_time) /60
+    duration = (time.time() - start_time) / 60
+
     logging.warning(f"""Log Path: {args["log_path"]}, Ckpt Path: {args["ckpt_path"]}, 
                     Training_Duration: {duration:.2f} mins, l1_LossLambda: {args["lambda"]}, 
                     initail filter number of Generator: {args["gen_filter_nums"]}, 
