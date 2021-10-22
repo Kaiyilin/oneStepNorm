@@ -101,3 +101,10 @@ python main.py --log_path ./logs \
 ```bash
 python evaluation/evaluate.py
 ```
+
+### TODO
+
+<ul>
+  <li> Reduce the size of model </li>
+  <li> Deploy the model in an efficient way, I tried Flask but it's unacceptably slow </li>
+</ul>
