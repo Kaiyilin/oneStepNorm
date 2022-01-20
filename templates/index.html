@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 class="centered large"> GAN for image registration</h1>
+    <div class="centered medium"> Select a PET image with nii as file extention, it will transform automatically</div>
+    <form class="centered medium" action='/' method="post" enctype="multipart/form-data">
+        <input type="file" webkitdirectory directory multiple class="centered" name="img_file">
+        <input type="submit" class="centered" value="predict">
+    </form>
+    {% if img_file %} 
+        <p class="centered">Prediction Completed, image saved to {{img_file}} </p>
+    {% endif %}
+
+    {% if message %} 
+        <p class="centered"> {{message}} </p>
+    {% endif %}
+
+{% endblock %}
